@@ -1,0 +1,4 @@
+
+plugins {
+    id 'harbol-code.java-conventions'
+}

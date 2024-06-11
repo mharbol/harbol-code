@@ -1,0 +1,8 @@
+
+plugins {
+    id 'harbol-code.java-conventions'
+}
+
+dependencies {
+    implementation project(':utilities')
+}
