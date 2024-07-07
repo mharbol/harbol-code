@@ -110,7 +110,7 @@ We follow the same logic for division.
 Once done, we sum all of the values in the stack and return the result.
 Effectively, we evaluate all the chunks of multiplication first so that the only operation left is addition and subtraction.
 
-## [LeetCode 264 - Ugly Number](https://leetcode.com/problems/ugly-number/)
+## [LeetCode 263 - Ugly Number](https://leetcode.com/problems/ugly-number/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/UglyNumber.java)
 was pretty simple; pretty much used some while loops to progressively divide out the prime factors until they were eliminated.
 My gripe with this problem was that the definition was not well defined.
