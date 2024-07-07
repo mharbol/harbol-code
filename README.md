@@ -110,6 +110,16 @@ We follow the same logic for division.
 Once done, we sum all of the values in the stack and return the result.
 Effectively, we evaluate all the chunks of multiplication first so that the only operation left is addition and subtraction.
 
+## [LeetCode 264 - Ugly Number](https://leetcode.com/problems/ugly-number/)
+[My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/UglyNumber.java)
+was pretty simple; pretty much used some while loops to progressively divide out the prime factors until they were eliminated.
+My gripe with this problem was that the definition was not well defined.
+One, for instance, "1 has no prime factors, therefore all of its prime factors are limited to 2, 3, and 5."
+But that is also the case for zero which is not an ugly number.
+There were also no clarification on negatives.
+Although the [OEIS page](https://oeis.org/A051037) does offer a soltion in Python, it would be nice to give it a nod in these
+integer sequence problems.
+
 ## [LeetCode 342 - Power of Four](https://leetcode.com/problems/power-of-four/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/PowerOfFour.java)
 uses a bitwise solution to solve the problem in $O(1)$ time and space.
@@ -121,7 +131,7 @@ For a power of four, the number will have a single 1 bit in an even position whi
 A bitwise and between that value and `n` gives us 0 if the single 1 bit is in a valid position.
 
 ## [LeetCode 1551 - Minimum Operations to Make Array Equal](https://leetcode.com/problems/minimum-operations-to-make-array-equal/)
-[The best solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/MinOpArr.java) requires a lot of maff.
+[The best solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/MinOpArr.java) requires a lot of math.
 In short, we proved a closed form for if there were an even or odd number of items in the array;
 once that was determined, we applied the closed form for the given case.
 <details>
