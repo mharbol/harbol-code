@@ -16,5 +16,5 @@ repositories {
     mavenCentral()
 }
 
-group 'io.github.mharbol'
+group 'mharbol'
 version '1.0.0-SNAPSHOT'
