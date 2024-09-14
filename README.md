@@ -16,18 +16,18 @@ Maintaining the offset lets this solution achieve a $O(n)$ runtime while iterati
 follows pretty easy steps.
 We first find an item to assign as the first spot in out return `ListNode` then iteratively compare the two nexts heads to find the next item while progressing
 the respective list head as needed.
-Once one (or both) have been exhaused, we fill the remainder of our merge with the surviving list.
+Once one (or both) have been exhausted, we fill the remainder of our merge with the surviving list.
 
 ## [LeetCode 49 - Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/GroupAnagrams.java)
 uses a `Map<String, List<String>>` to find the anagrams.
-The keys are the alphabatized version of the input String and the values are the words whose letters match the keys.
+The keys are the alphabetize version of the input String and the values are the words whose letters match the keys.
 
 Note: updated solution uses an inner `AnagramComparitor` class and therefore `Map<AnagramComparitor, List<String>>` that works *slightly* better.
 
 ## [LeetCode 94 - Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/InorderTreeTraversal.java)
-follows basic priciples from CS class.
+follows basic principles from CS class.
 We use recursion to traverse left, own value, then right and return the result at each node; at each step we just add the current `val`.
 Sometimes basic is fast.
 
@@ -53,7 +53,7 @@ Doing it this way allows the structure to have $O(1)$ complexity for `push()`, `
 ## [LeetCode 189 - Rotate Array](https://leetcode.com/problems/rotate-array/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/ShiftArray.java)
 uses the classic solution of making a `temp` array to shift the elements right by `k` and then replaces them in the original (can't reassign the object).
-This gives me a $O(n)$ runtime and $O(n)$ space complexity, but I want to do it inplace as well.
+This gives me a $O(n)$ runtime and $O(n)$ space complexity, but I want to do it in place as well.
 Working on a solution where I don't have to iterate over the array `k` times to shift everything to the right/left one at a time.
 
 On a small redux, made the `rotateArrayByOne()` method to do a poor attempt of running the code in constant space.
@@ -74,7 +74,7 @@ First we reverse the entire array.
   <--------
 [ 5 4 3 2 1 ]
 ```
-Then we reverse the the chunk of the first `k` followed by the remaining elements.
+Then we reverse the chunk of the first `k` followed by the remaining elements.
 ```
 [ 5 4 3 2 1 ]
   <-- <----
@@ -88,7 +88,7 @@ And there we have an array rotated by `k`.
 was slightly rigged since I published a paper on these numbers previously.
 I saw an annoying YouTube short code an overly complicated version of this using `Set`s to determine if the sequence repeats.
 I know that all integers will either go to 1 or 4 following the Happy Function.
-All I really have to do then is return `true` when I hit 1 or `false` when I hit 4 (... and 0 as a catch-all).
+All I really have to do then is return `true` when I hit 1 or `false` when I hit 4 (...and 0 as a catch-all).
 
 ## [LeetCode 224 - Basic Calculator](https://leetcode.com/problems/basic-calculator/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/BasicCalculator.java)
@@ -98,7 +98,7 @@ Whenever the index reaches an open parenthesis, we kick off a new calculation to
 Returns are only ever called when the index reaches the end of the string (this will be the return from the root calculation)
 or when we encounter a closing parenthesis.
 Carefully placing our `calculate()` calls ensures we do not return early and allows us to nest as many parentheses as we want.
-The `parseNumber()` and `progressIndex()` methods were real heros in making this solution a lot cleaner to read.
+The `parseNumber()` and `progressIndex()` methods were real heroes in making this solution a lot cleaner to read.
 
 ## [LeetCode 227 - Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/BasicCalculator2.java)
@@ -117,7 +117,7 @@ My gripe with this problem was that the definition was not well defined.
 One, for instance, "1 has no prime factors, therefore all of its prime factors are limited to 2, 3, and 5."
 But that is also the case for zero which is not an ugly number.
 There were also no clarification on negatives.
-Although the [OEIS page](https://oeis.org/A051037) does offer a soltion in Python, it would be nice to give it a nod in these
+Although the [OEIS page](https://oeis.org/A051037) does offer a solution in Python, it would be nice to give it a nod in these
 integer sequence problems.
 
 ## [LeetCode 342 - Power of Four](https://leetcode.com/problems/power-of-four/)
@@ -144,11 +144,11 @@ We assert that $a_n = n^2$.
 We know this is true for $n = 1$ (the base case); $a_1 = 1$.
 The value of $a_n$ can be recursively defined in terms of the previous value, $a_n = a_{n - 1} + (2n - 1)$.
 This definition shows that the current sum is equal to the previous sum plus the next odd number in the sequence.
-We use these definitions and assuptions to prove the assumption is true for the next case.
+We use these definitions and assumption to prove the assumption is true for the next case.
 Let $k + 1$ represent the index of the next value in the sequence.
 This means that $a_{k + 1} = a_k + 2(k + 1) - 1$.
 If we substitute $a_k = k^2$ (our assertion), then $a_{k + 1} = k^2 + 2k + 2 - 1 = k^2 + 2k + 1 = (k + 1)^2$,
-which is the the same as the initial assuption in the $k + 1$ case.
+which is the same as the initial assumption in the $k + 1$ case.
 
 #### Proof that the sum of the first $n$ even numbers is $n(n + 1)$.
 This can be proven in a similar way as before.
@@ -223,3 +223,12 @@ If the pointer looking for the next jumpable point falls off the array, then it 
 uses a similar approach as the first game.
 We start off from where we want to go and dispatch a pointer to find the farthest left position where we can get there.
 Since making it to the end is assured, we can afford this lax approach to finding the optimal path to the end.
+
+### [LeetCode 1306 - Jump Game III](https://leetcode.com/problems/jump-game-iii/)
+[My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/jumpgame/JumpGame3.java)
+is a fun recursive solution.
+Since all the entries of `arr` are non-negative, I made them negative if they were already visited.
+Base cases are if the value at index are zero or less than zero, otherwise I send the jumper left and right.
+Because each entry can only be visited one time before a decision is made and the recursion completes,
+this solution has $O(n)$ time and space complexity.
+
