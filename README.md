@@ -227,7 +227,7 @@ Since making it to the end is assured, we can afford this lax approach to findin
 ### [LeetCode 1306 - Jump Game III](https://leetcode.com/problems/jump-game-iii/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/jumpgame/JumpGame3.java)
 is a fun recursive solution.
-Since all the entries of `arr` are non-negative, I made them negative if they were already visited.
+Since all the entries of `arr` are non-negative, I made them -1 if they were already visited.
 Base cases are if the value at index are zero or less than zero, otherwise I send the jumper left and right.
 Because each entry can only be visited one time before a decision is made and the recursion completes,
 this solution has $O(n)$ time and space complexity.

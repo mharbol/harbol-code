@@ -21,11 +21,11 @@ public class JumpGame3 {
         // Base Cases:
         if (0 == num) {
             return true;
-        } else if (0 > num) {
+        } else if (-1 == num) {
             // already visited
             return false;
         }
-        arr[start] = -num; // negative marks visited
+        arr[start] = -1; // mark visited
         return (0 <= start - num && canReach(arr, start - num)) ||
                 (arr.length > start + num && canReach(arr, start + num));
     }
