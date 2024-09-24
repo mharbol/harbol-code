@@ -25,6 +25,16 @@ The keys are the alphabetize version of the input String and the values are the 
 
 Note: updated solution uses an inner `AnagramComparitor` class and therefore `Map<AnagramComparitor, List<String>>` that works *slightly* better.
 
+## [LeetCode 60 - Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)
+[My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/PermutationSequence.java)
+was a cool one to work on.
+For any $n$ the permutations in order will consist of $(n - 1)!$ starting with 1, $(n - 1)!$ starting with 2, and so on.
+The pattern holds if you take a group with the same leading digit and remove it from each of them, and it keeps going all the way in.
+I called each of these subsets with the same positional digit "permutation groups."
+I go down as far as I can to the start of each permutation group swapping the front digit with the next until I cannot step any farther down without stepping out.
+From there, I go in one level of digits and keep doing the process until I am finally at the index of the permutation I want.
+Probably owe a better explanation eventually.
+
 ## [LeetCode 94 - Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/InorderTreeTraversal.java)
 follows basic principles from CS class.
