@@ -23,9 +23,7 @@ public class UglyNumber {
         while (0 == n % 3) {
             n /= 3;
         }
-        while (0 == n % 2) {
-            n /= 2;
-        }
-        return n == 1;
+        // power of 2 check (already >0)
+        return 0 == (n & (n - 1));
     }
 }

@@ -112,7 +112,8 @@ Effectively, we evaluate all the chunks of multiplication first so that the only
 
 ## [LeetCode 263 - Ugly Number](https://leetcode.com/problems/ugly-number/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/UglyNumber.java)
-was pretty simple; pretty much used some while loops to progressively divide out the prime factors until they were eliminated.
+was pretty simple; pretty much used some while loops to progressively divide out the prime factors until they were eliminated;
+added the bitwise power of two check for flair.
 My gripe with this problem was that the definition was not well defined.
 One, for instance, "1 has no prime factors, therefore all of its prime factors are limited to 2, 3, and 5."
 But that is also the case for zero which is not an ugly number.
