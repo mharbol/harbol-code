@@ -41,6 +41,13 @@ follows basic principles from CS class.
 We use recursion to traverse left, own value, then right and return the result at each node; at each step we just add the current `val`.
 Sometimes basic is fast.
 
+## [LeetCode 112 - Path Sum](https://leetcode.com/problems/path-sum/)
+[My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/PathSum.java)
+is your basic tree traversal.
+Subtract the node value from the given target value,
+if it is a leaf node return if the difference is zero,
+otherwise recursively call on the left and right nodes.
+
 ## [LeetCode 128 - Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 [Our solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/LongestConsecutiveSequence.java)
 was originally inspired and come up with by my colleague.
