@@ -41,6 +41,11 @@ follows basic principles from CS class.
 We use recursion to traverse left, own value, then right and return the result at each node; at each step we just add the current `val`.
 Sometimes basic is fast.
 
+## [LeetCode 111 - Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+[My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/MinDepthBinTree.java)
+is pretty basic recursion; go down to the leaf, get the depth, return the min, recurse up.
+Worked alright and passed, not in the mood to make it super mega fast this evening.
+
 ## [LeetCode 112 - Path Sum](https://leetcode.com/problems/path-sum/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/PathSum.java)
 is your basic tree traversal.
