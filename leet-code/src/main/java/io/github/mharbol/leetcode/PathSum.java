@@ -9,6 +9,14 @@ import io.github.mharbol.util.TreeNode;
  */
 public class PathSum {
 
+    /**
+     * Determines if the tree has a path from the root to a leaf that totals to the
+     * target sum.
+     *
+     * @param root      the root of the given tree
+     * @param targetSum the target sum of the path
+     * @return true if the tree has at least one path, otherwise false
+     */
     public boolean hasPathSum(TreeNode root, int targetSum) {
         if (null == root) {
             return false;

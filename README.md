@@ -47,6 +47,7 @@ is your basic tree traversal.
 Subtract the node value from the given target value,
 if it is a leaf node return if the difference is zero,
 otherwise recursively call on the left and right nodes.
+Tried to be clever and cut it short if the target sum was less than 0 at any non-leaf, but the values can be negative.
 
 ## [LeetCode 128 - Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 [Our solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/LongestConsecutiveSequence.java)

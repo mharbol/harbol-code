@@ -13,7 +13,7 @@ import io.github.mharbol.util.TreeNode;
  */
 public class PathSumTest {
 
-    PathSum cut;
+    private PathSum cut;
 
     @Before
     public void setup() {
