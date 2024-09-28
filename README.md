@@ -18,6 +18,12 @@ We first find an item to assign as the first spot in out return `ListNode` then 
 the respective list head as needed.
 Once one (or both) have been exhausted, we fill the remainder of our merge with the surviving list.
 
+## [LeetCode 37 - Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)
+[My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/SudokuSolver.java)
+is the classic backtracking solution.
+Make a guess, confirm the puzzle is valid at that guess, see if it is still valid in the future.
+To keep it a little interesting I made a cool bitwise mechanism to check which numbers had been placed in a row, column, or subsquare.
+
 ## [LeetCode 49 - Group Anagrams](https://leetcode.com/problems/group-anagrams/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/GroupAnagrams.java)
 uses a `Map<String, List<String>>` to find the anagrams.
