@@ -160,8 +160,17 @@ For a power of four, the number will have a single 1 bit in an even position whi
 (the single 1 will slip through the cracks, so to speak, of the zeros in `1010...10`).
 A bitwise and between that value and `n` gives us 0 if the single 1 bit is in a valid position.
 
+## [LeetCode 641 - Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)
+[My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/CircularDeque.java)
+was a simple exercise in modular arithmetic.
+As easy as it would be to use a doubly linked list, I followed the name of the problem and actually made it "circular" with an array and mods.
+Everything is in reference to the front index which goes left for `insertFront()` and right for `deleteFront()`.
+Operations for `insertLast()` and `getLast()` just use the current number of items to find the end.
+These are all done mod `k` to not get an out of bounds index.
+
 ## [LeetCode 1551 - Minimum Operations to Make Array Equal](https://leetcode.com/problems/minimum-operations-to-make-array-equal/)
-[The best solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/MinOpArr.java) requires a lot of math.
+[The best solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/MinOpArr.java)
+requires a lot of math.
 In short, we proved a closed form for if there were an even or odd number of items in the array;
 once that was determined, we applied the closed form for the given case.
 <details>

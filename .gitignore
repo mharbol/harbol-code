@@ -8,5 +8,5 @@ build
 .project
 .settings/
 
-# vim thangs
+# vim things
 *.swp
