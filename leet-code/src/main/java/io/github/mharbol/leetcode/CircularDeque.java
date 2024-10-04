@@ -12,7 +12,6 @@ public class CircularDeque {
     private int cap = 0;
     private int frontIdx = 0;
 
-
     /**
      * Creates a new CircularDeque with capacity {@code k}.
      */
