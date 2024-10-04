@@ -67,6 +67,11 @@ In this case we put all the numbers into a set, pop a number from the set, and s
 This outperformed [the Neet Code solution](https://www.youtube.com/watch?v=P6RZZMu_maU), but the LeetCode servers might have been a little stressed
 when I ran it because after a few more runs they were about neck and neck.
 
+## [LeetCode 136 - Single Number](https://leetcode.com/problems/single-number/)
+[My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/SingleNumber.java)
+came about because I got bored and decided to do a problem.
+Just xor the numbers together and there you go.
+
 ## [LeetCode 150 - Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/EvaluateReversePolishNotation.java)
 makes easy use of a `Stack` to keep track of the calculation.
