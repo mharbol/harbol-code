@@ -41,6 +41,14 @@ I go down as far as I can to the start of each permutation group swapping the fr
 From there, I go in one level of digits and keep doing the process until I am finally at the index of the permutation I want.
 Probably owe a better explanation eventually.
 
+## [LeetCode 74 - Search a 2D Matric](https://leetcode.com/problems/search-a-2d-matrix/)
+[My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/SearchMatrix2D.java)
+is composed of two binary searches.
+The first looks for the row like a normal binary search.
+If the number is not the first value in the row, then the "right" pointer (which will be the leftmost/lower after they cross) is the row value...
+Also had to put in a consideration for if the right was -1 and set the searched row to 0.
+Then just do a binary search on the row.
+
 ## [LeetCode 94 - Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/InorderTreeTraversal.java)
 follows basic principles from CS class.
