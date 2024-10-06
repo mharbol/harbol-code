@@ -5,7 +5,7 @@ package io.github.mharbol.leetcode;
  * SearchMatrix2d
  * Solution class for Leet Code 74
  */
-public class SearchMatrix2d {
+public class SearchMatrix2D {
 
     /**
      * Searches the sorted 2D matrix for the given target value.

@@ -10,11 +10,11 @@ import org.junit.Test;
  */
 public class SearchMatrix2dTest {
 
-    private SearchMatrix2d cut;
+    private SearchMatrix2D cut;
 
     @Before
     public void setup() {
-        cut = new SearchMatrix2d();
+        cut = new SearchMatrix2D();
     }
 
     @Test
