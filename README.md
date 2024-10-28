@@ -173,6 +173,12 @@ For a power of four, the number will have a single 1 bit in an even position whi
 (the single 1 will slip through the cracks, so to speak, of the zeros in `1010...10`).
 A bitwise and between that value and `n` gives us 0 if the single 1 bit is in a valid position.
 
+## [LeetCode 567 - Permutation in String](https://leetcode.com/problems/permutation-in-string/)
+[My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/PermutationInString.java)
+is not the nicest but it does the trick.
+Make two arrays as frequency lookup tables for the characters and slide across the searched String until the same frequency is reached.
+Just felt like working a problem and figured this one wouldn't be too bad.
+
 ## [LeetCode 641 - Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/CircularDeque.java)
 was a simple exercise in modular arithmetic.
