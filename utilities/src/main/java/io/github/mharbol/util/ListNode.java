@@ -70,11 +70,6 @@ public class ListNode {
     @Override
     public boolean equals(Object other) {
 
-        // check equality on the nodes
-        if (other == null) {
-            return false;
-        }
-
         if (!(other instanceof ListNode)) {
             return false;
         }
@@ -88,12 +83,8 @@ public class ListNode {
         ListNode thisNext = this.next;
         ListNode otherNext = ((ListNode) other).next;
 
-        if (thisNext == null && otherNext == null) {
-            return true;
-        }
-
-        if (thisNext == null && otherNext != null) {
-            return false;
+        if (null == this.next) {
+            return null == otherNext;
         }
 
         return thisNext.equals(otherNext);

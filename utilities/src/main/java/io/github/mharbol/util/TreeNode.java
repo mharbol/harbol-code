@@ -49,7 +49,7 @@ public class TreeNode {
     @Override
     public boolean equals(Object obj) {
 
-        if (obj == null || !(obj instanceof TreeNode)) {
+        if (!(obj instanceof TreeNode)) {
             return false;
         }
 
@@ -62,8 +62,8 @@ public class TreeNode {
             return false;
         }
 
-        boolean leftsEqual = (this.left == null ? other.left == null : this.left.equals(other.left));
-        boolean rightsEqual = (this.right == null ? other.right == null : this.right.equals(other.right));
+        final boolean leftsEqual = (this.left == null ? other.left == null : this.left.equals(other.left));
+        final boolean rightsEqual = (this.right == null ? other.right == null : this.right.equals(other.right));
 
         return leftsEqual && rightsEqual;
     }
