@@ -5,6 +5,12 @@ To keep the project available to many problems with reusable components (and jus
 [multi-project build](https://docs.gradle.org/current/userguide/multi_project_builds.html).
 The project currently has a `leet-code` subproject for LeetCode problems specifically and a `utilities` subproject for utils available to anyone.
 
+## [LeetCode 1 - Two Sum](https://leetcode.com/problems/two-sum/)
+[The solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/TwoSum.java)
+is a well-known classic.
+Use a `HashMap` to store the index of the matching number and there you go.
+Just had to do it eventually.
+
 ## [LeetCode 19 - Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/EndOfLinkedList.java)
 traverses the entire length of the linked list while maintaining an offset (`n`) from which to progress the dropped node.
