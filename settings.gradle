@@ -1,3 +1,0 @@
-rootProject.name = 'harbol-code'
-
-include 'leet-code', 'utilities'

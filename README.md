@@ -1,9 +1,8 @@
 # Harbol Code
-A collection of [LeetCode](https://leetcode.com/) and similar problems solved with the [best java build tool](https://gradle.org/) on the market.
+A collection of [LeetCode](https://leetcode.com/) and similar problems.
 
-To keep the project available to many problems with reusable components (and just to learn), I turned this into a
-[multi-project build](https://docs.gradle.org/current/userguide/multi_project_builds.html).
 The project currently has a `leet-code` subproject for LeetCode problems specifically and a `utilities` subproject for utils available to anyone.
+This is mostly to figure my way around multi-module builds.
 
 ## [LeetCode 1 - Two Sum](https://leetcode.com/problems/two-sum/)
 [The solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/TwoSum.java)
