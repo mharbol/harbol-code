@@ -7,13 +7,13 @@
     <parent>
         <groupId>mharbol</groupId>
         <artifactId>harbol-code-parent</artifactId>
-        <version>${revision}</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <groupId>mharbol</groupId>
     <artifactId>harbol-code-utilities</artifactId>
     <packaging>jar</packaging>
-    <version>${revision}</version>
+    <version>1.0.0-SNAPSHOT</version>
 
 </project>
 

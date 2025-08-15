@@ -7,7 +7,7 @@
     <groupId>mharbol</groupId>
     <artifactId>harbol-code-parent</artifactId>
     <packaging>pom</packaging>
-    <version>${revision}</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <name>Harbol Code</name>
     <url>https://github.com/mharbol/harbol-code</url>
@@ -19,7 +19,6 @@
     </modules>
 
     <properties>
-        <revision>1.0.0-SNAPSHOT</revision>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
