@@ -12,6 +12,7 @@
 
     <groupId>mharbol</groupId>
     <artifactId>harbol-code-utilities</artifactId>
+    <name>Harbol Code Utilities</name>
     <packaging>jar</packaging>
     <version>1.0.0-SNAPSHOT</version>
 

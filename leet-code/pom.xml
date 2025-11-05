@@ -12,6 +12,7 @@
 
     <groupId>mharbol</groupId>
     <artifactId>harbol-leet-code</artifactId>
+    <name>Harbol LeetCode</name>
     <packaging>jar</packaging>
     <version>1.0.0-SNAPSHOT</version>
 
@@ -23,6 +24,3 @@
         </dependency>
     </dependencies>
 </project>
-
-
-
