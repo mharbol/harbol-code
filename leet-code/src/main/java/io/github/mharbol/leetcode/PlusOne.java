@@ -28,10 +28,6 @@ public class PlusOne {
         if (0 == idx && 9 == digits[idx]) {
             int[] ret = new int[digits.length + 1];
             ret[0] = 1;
-            ret[1] = 0;
-            for (int i = 2; i < digits.length; i++) {
-                ret[i] = digits[i - 1];
-            }
             return ret;
         } else if (digits[idx] < 9) {
             digits[idx]++;
