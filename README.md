@@ -46,6 +46,12 @@ I go down as far as I can to the start of each permutation group swapping the fr
 From there, I go in one level of digits and keep doing the process until I am finally at the index of the permutation I want.
 Probably owe a better explanation eventually.
 
+## [LeetCode 66 - Plus One](https://leetcode.com/problems/plus-one/)
+[My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/PlusOne.java)
+was a pretty simple recursive solution.
+Add one to the matching digit, roll up and recurse if the current digit is a 9.
+The only special case is if the leading digit is a 9 that needs to get added to, in which case append "1, 0" to the list of outputs.
+
 ## [LeetCode 74 - Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/)
 [My solution](https://github.com/mharbol/harbol-code/blob/master/leet-code/src/main/java/io/github/mharbol/leetcode/SearchMatrix2D.java)
 is composed of two binary searches.
