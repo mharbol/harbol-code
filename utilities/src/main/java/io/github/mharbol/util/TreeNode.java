@@ -22,12 +22,6 @@ public class TreeNode {
     public TreeNode right;
 
     /**
-     * Default constructor
-     */
-    public TreeNode() {
-    }
-
-    /**
      * Empty TreeNode constructor
      */
     public TreeNode(int val) {

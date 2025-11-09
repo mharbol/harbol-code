@@ -61,6 +61,7 @@ public class TreeNodeTest {
         TreeNode treeNode2 = new TreeNode(1, new TreeNode(2), new TreeNode(4));
 
         Assert.assertNotEquals(treeNode1, treeNode2);
+        Assert.assertNotEquals(treeNode2, treeNode1);
     }
 
     @Test
@@ -69,6 +70,7 @@ public class TreeNodeTest {
         TreeNode treeNode2 = null;
 
         Assert.assertNotEquals(treeNode1, treeNode2);
+        Assert.assertNotEquals(treeNode2, treeNode1);
     }
 
     @Test

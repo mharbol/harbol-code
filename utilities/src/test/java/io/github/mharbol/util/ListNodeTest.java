@@ -132,19 +132,19 @@ public class ListNodeTest {
     @Test
     public void testListNodeStaticConstructor() {
         ListNode expected = new ListNode(4, new ListNode(5, new ListNode(6, new ListNode(2, new ListNode(4)))));
-        ListNode actual = ListNode.newList(4, 5, 6, 2, 4);
+        ListNode actual = ListNode.of(4, 5, 6, 2, 4);
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testListNodeStaticConstructorLength1() {
         ListNode expected = new ListNode(49);
-        ListNode actual = ListNode.newList(49);
+        ListNode actual = ListNode.of(49);
         Assert.assertEquals(expected, actual);
     }
 
     @Test
     public void testListNodeStaticConstructorLength0() {
-        Assert.assertNull(ListNode.newList());
+        Assert.assertNull(ListNode.of());
     }
 }

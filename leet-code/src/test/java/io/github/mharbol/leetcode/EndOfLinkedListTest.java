@@ -15,9 +15,9 @@ public class EndOfLinkedListTest {
 
     @Test
     public void testLeetCode1() {
-        ListNode node1 = ListNode.newList(1, 2, 3, 4, 5);
+        ListNode node1 = ListNode.of(1, 2, 3, 4, 5);
 
-        ListNode expected = ListNode.newList(1, 2, 3, 5);
+        ListNode expected = ListNode.of(1, 2, 3, 5);
 
         ListNode actual = cut.removeNthFromEnd(node1, 2);
 
@@ -37,7 +37,7 @@ public class EndOfLinkedListTest {
     @Test
     public void testLeetCode3() {
 
-        ListNode node1 = ListNode.newList(1,2);
+        ListNode node1 = ListNode.of(1,2);
 
         ListNode expected = new ListNode(1);
 

@@ -101,7 +101,7 @@ public class ListNode {
      * @param values the ordered values to enter into the ListNode
      * @return the head of a ListNode representation of values; `null` if the list is empty.
      */
-    public static ListNode newList(int... values) {
+    public static ListNode of(int... values) {
 
         if (values.length == 0) {
             return null;
