@@ -74,8 +74,8 @@ public class ShiftArrayTest {
 
     @Test
     public void testRotateByOneSmall() {
-        nums = new int[] {1};
-        expected = new int[] {1};
+        nums = new int[] { 1 };
+        expected = new int[] { 1 };
 
         cut.rotateArrayByOne(nums);
         Assert.assertTrue(Arrays.equals(expected, nums));

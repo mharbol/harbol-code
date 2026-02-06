@@ -17,7 +17,7 @@ public class MinOpArr {
         }
 
         // otherwise, use the sum of the first [half] evens
-        // sum of the first n evens is n * (n + 1) 
+        // sum of the first n evens is n * (n + 1)
         return half * (half + 1);
     }
 }

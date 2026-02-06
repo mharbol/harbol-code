@@ -37,7 +37,7 @@ public class EndOfLinkedListTest {
     @Test
     public void testLeetCode3() {
 
-        ListNode node1 = ListNode.of(1,2);
+        ListNode node1 = ListNode.of(1, 2);
 
         ListNode expected = new ListNode(1);
 
@@ -45,5 +45,4 @@ public class EndOfLinkedListTest {
 
         Assert.assertEquals(expected, actual);
     }
-
 }

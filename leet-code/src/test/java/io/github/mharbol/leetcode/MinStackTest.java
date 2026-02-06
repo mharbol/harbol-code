@@ -100,5 +100,5 @@ public class MinStackTest {
         assertTrue(cut.top() == 34);
         cut.pop();
         assertTrue(cut.size() == 0);
-    } 
+    }
 }

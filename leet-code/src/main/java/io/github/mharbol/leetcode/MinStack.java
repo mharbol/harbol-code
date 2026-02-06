@@ -9,9 +9,11 @@ import java.util.Stack;
 public class MinStack {
 
     /**
-     * Default constructor for this MinStack. Creates an empty stack of {@code int}s that also can refer to the minimum value.
+     * Default constructor for this MinStack. Creates an empty stack of {@code int}s
+     * that also can refer to the minimum value.
      */
-    public MinStack() {}
+    public MinStack() {
+    }
 
     /**
      * The "traditional" stack that keeps track of the {@code int}s in order.
@@ -19,12 +21,14 @@ public class MinStack {
     private Stack<Integer> tradStack = new Stack<>();
 
     /**
-     * The minimum value stack that holds the value of the current minimum for this MinStack.
+     * The minimum value stack that holds the value of the current minimum for this
+     * MinStack.
      */
     private Stack<Integer> minvStack = new Stack<>();
 
     /**
      * Push an {@code int} onto this MinStack.
+     * 
      * @param val the value to be pushed onto this MinStack
      */
     public void push(int val) {
@@ -36,8 +40,7 @@ public class MinStack {
         // this is cool because of short-circuiting
         if (minvStack.size() == 0 || getMin() > val) {
             minvStack.push(val);
-        }
-        else {
+        } else {
             minvStack.push(getMin());
         }
     }
@@ -52,6 +55,7 @@ public class MinStack {
 
     /**
      * Peek at the head value of this MinStack.
+     * 
      * @return the head value of this MinStack
      */
     public int top() {
@@ -60,6 +64,7 @@ public class MinStack {
 
     /**
      * Peek at the minimum value of this MinStack.
+     * 
      * @return the minimum value of this MinStack
      */
     public int getMin() {
@@ -68,6 +73,7 @@ public class MinStack {
 
     /**
      * Read the size of this MinStack.
+     * 
      * @return the size of this MinStack as number of elements.
      */
     protected int size() {

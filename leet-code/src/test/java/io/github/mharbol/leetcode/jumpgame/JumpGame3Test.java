@@ -35,7 +35,7 @@ public class JumpGame3Test {
 
     @Test
     public void testLeet3() {
-        int[] arr = new int[] {3,0,2,1,2};
+        int[] arr = new int[] { 3, 0, 2, 1, 2 };
         final int start = 2;
         Assert.assertFalse(cut.canReach(arr, start));
     }

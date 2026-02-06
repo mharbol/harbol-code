@@ -23,7 +23,7 @@ public class MinDepthBinTree {
         int dRight = minDepth(root.right);
         if (0 == dLeft) {
             return 1 + dRight;
-        }  else if (0 == dRight) {
+        } else if (0 == dRight) {
             return 1 + dLeft;
         } else {
             return 1 + (dLeft > dRight ? dRight : dLeft);
